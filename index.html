@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>包书会 个人简历</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">个人简历</div>
+      <nav class="main-nav" id="mainNav" role="navigation" aria-label="主导航">
+        <ul>
+          <li><a href="#home" class="nav-link active">首页</a></li>
+          <li><a href="#about" class="nav-link">个人简介</a></li>
+          <li><a href="#skills" class="nav-link">专业技能</a></li>
+          <li><a href="#projects" class="nav-link">项目展示</a></li>
+          <li><a href="#contact" class="nav-link">联系我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Hey. 我是大数据方向的设计与开发者</h1>
+        <p class="lead">专注于数据分析、数据可视化与机器学习工程实践</p>
+        <a href="#projects" class="btn">查看我的项目</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="about-photo">
+          <img src="images/igor-karimov-_TP34j1aCzU-unsplash.png" alt="头像占位" />
+        </div>
+        <div class="about-info">
+          <h2>包书会</h2>
+          <p>专业：数据科学与大数据技术</p>
+          <p>学校：河南牧业经济学院</p>
+          <p>自我介绍：我对大数据有浓厚兴趣，擅长使用 Python、java、c++ 进行数据清洗与分析，并能将分析结果用可视化表达出来，支持业务决策。</p>
+          <div class="cta-row">
+            <a href="#contact" class="btn-secondary">联系我</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>专业技能</h2>
+        <p class="muted">使用星级评分与进度条展示技能水平</p>
+        <div class="skill-list">
+          <div class="skill" data-rating="5">
+            <h3>网络编程与数据库</h3>
+            <div class="stars">★ ★ ★ ★ ★</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill" data-rating="4">
+            <h3>数据结构（C / C++）</h3>
+            <div class="stars">★ ★ ★ ★ ☆</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill" data-rating="4">
+            <h3>面向对象软件开发（Java）</h3>
+            <div class="stars">★ ★ ★ ★ ☆</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill" data-rating="3">
+            <h3>C++</h3>
+            <div class="stars">★ ★ ★ ☆ ☆</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>项目展示</h2>
+        <p class="muted">以下为与大数据相关的 2-3 个示例项目</p>
+        <div class="project-grid">
+          <article class="project">
+            <img src="images/path-digital-tR0jvlsmCuQ-unsplash.jpg" alt="项目1占位图">
+            <h3>项目：电商用户行为分析</h3>
+            <p>描述：基于用户点击与下单日志，进行留存与转化分析，发现关键流失节点。</p>
+            <p><strong>技术栈：</strong>Python</p>
+          </article>
+
+          <article class="project">
+            <img src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="项目2占位图">
+            <h3>项目：销售预测与库存优化</h3>
+            <p>描述：利用时序预测模型预测未来销量，结合库存策略减少缺货率。</p>
+            <p><strong>技术栈：</strong>Java</p>
+          </article>
+
+          <article class="project">
+            <img src="images/deng-xiang--WXQm_NTK0U-unsplash.jpg" alt="项目3占位图">
+            <h3>项目：可视化仪表盘</h3>
+            <p>描述：为管理层设计交互式仪表盘，展示 KPI 与异常告警。</p>
+            <p><strong>技术栈：</strong>Java html</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>联系与社交</h2>
+        <div class="contact-grid">
+          <div class="contact-left">
+            <p>欢迎通过下方表单或社交媒体与我联系。</p>
+            <div class="social">
+              <a href="#">🔗 GitHub</a>
+              <a href="#">🔗 微信</a>
+              <img src="images/markus-winkler-GTJNxRG4QJw-unsplash.jpg" alt="微信图片"></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form id="contactForm" novalidate>
+              <label>姓名 <input type="text" id="name" name="name" required></label>
+              <label>邮箱 <input type="email" id="email" name="email" required></label>
+              <label>留言 <textarea id="message" name="message" required></textarea></label>
+              <div class="form-row">
+                <button type="submit" class="btn">发送</button>
+                <div id="formMsg" class="form-msg" aria-live="polite"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Copyright © 2025 baoshuhui All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
